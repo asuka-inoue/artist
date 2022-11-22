@@ -1,0 +1,23 @@
+@use "global" as *;
+
+.p-news-item {
+  padding-bottom: rem(32);
+  border-bottom: 1px dashed $white;
+  display: block;
+  @include mq(md) {
+    padding-bottom: rem(25);
+    display: flex;
+  }
+}
+
+.p-news-item__date {
+  @include mq(md) {
+    width: rem(203);
+    flex-shrink: 0;
+  }
+}
+
+.p-news-item__body {
+  font-size: rem(14);
+  line-height: calc(20 / 14);
+}

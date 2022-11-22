@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.l-profile {
+  margin-top: rem(78);
+  @include mq(md) {
+    margin-top: rem(144);
+  }
+}

@@ -1,0 +1,18 @@
+@use "global" as *;
+
+.c-date {
+  font-family: $font-en;
+  
+}
+
+.c-date time {
+  font-style: italic;
+  font-size: rem(36);
+  line-height: calc(47 / 36);
+}
+
+.c-date span {
+  font-size: rem(12);
+  line-height: calc(16 / 12);
+  margin-left: rem(6);
+}

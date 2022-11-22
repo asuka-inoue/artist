@@ -1,0 +1,37 @@
+@use "global" as *;
+
+.c-section-title {
+  font-size: rem(36);
+  line-height: calc(49 / 36);
+  font-family: $font-sub;
+  font-weight: 400;
+  text-transform: uppercase;
+  background: -webkit-linear-gradient(-90deg, #FFD600 -10%, #000000 130%);
+  color: $gold;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-stroke: 0.025em transparent;
+  text-shadow: 0 4px 4px rgba(255,255,255,.12);
+  position: relative;
+  text-align: center;
+  @include mq(md) {
+    text-align: left;
+  }
+  }
+
+.c-section-title::after {
+  content: attr(data-en);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: transparent;
+  background: -webkit-linear-gradient(-90deg, #FFD600 -30%, #000000 70%);
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 0.045em rgba(147, 125, 13, .1);
+  z-index: -1;
+  @include mq(md) {
+    left: 0;
+    transform: initial;
+  }
+}

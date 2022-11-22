@@ -1,0 +1,22 @@
+@use "global" as *;
+
+.c-btn {
+  display: inline-block;
+  border-radius: rem(24);
+  min-width: rem(256);
+  text-align: center;
+  font-size: rem(16);
+  font-weight: bold;
+  background: $gold;
+  color: $black;
+  line-height: calc(23/16);
+  padding: rem(7) rem(15) rem(8);
+  transition: .3s;
+  border: 1px solid $gold;
+}
+
+.c-btn:hover {
+  background: $black;
+  color: $gold;
+  opacity: 1;
+}

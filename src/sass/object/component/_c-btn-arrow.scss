@@ -1,0 +1,42 @@
+@use "global" as *;
+
+.c-btn-arrow {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: rem(18);
+  min-width: rem(176);
+  font-size: rem(16);
+  font-weight: bold;
+  line-height: calc(23/16);
+  background: $yellow;
+  color: $black;
+  padding: rem(3) rem(15) rem(4);
+  border: 1px solid $yellow;
+  transition: .3s;
+}
+
+.c-btn-arrow::after {
+  content: "";
+  background: $black;
+  mask: url(../images/icon-arrow.svg) no-repeat center / contain;
+  width: rem(18);
+  height: rem(18);
+  margin-top: rem(2);
+  margin-left: rem(8);
+  transition: .3s;
+}
+
+.c-btn-arrow:hover {
+  @include mq(md) {
+    background: $black;
+    color: $yellow;
+    opacity: 1;
+  }
+}
+
+.c-btn-arrow:hover::after {
+  @include mq(md) {
+    background: $yellow;
+  }
+}

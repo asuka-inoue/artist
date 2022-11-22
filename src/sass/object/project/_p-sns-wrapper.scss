@@ -1,0 +1,72 @@
+@use "global" as *;
+
+.p-sns-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: rem(37);
+  row-gap: rem(26);
+  max-width: rem(297);
+  width: 100%;
+  margin: auto;
+  @include mq(md) {
+    max-width: 100%;
+    flex-wrap: nowrap;
+    justify-content: center;
+    column-gap: rem(49);
+  }
+}
+
+.p-sns-wrapper__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: rem(130);
+  @include mq(md) {
+    width: auto;
+  }
+}
+
+
+.p-sns-wrapper__img--youtube img {
+  @include mq(md) {
+    max-width: rem(180);
+  }
+}
+
+.p-sns-wrapper__img--stores img {
+  @include mq(md) {
+    max-width: rem(129);
+  }
+}
+
+
+.p-sns-wrapper__img--tiktok img {
+  max-width: rem(121);
+}
+
+.p-sns-wrapper__img--17live img {
+  @include mq(md) {
+    max-width: rem(116);
+  }
+}
+
+.p-sns-wrapper__img--vimeo img {
+  @include mq(md) {
+    max-width: rem(141);
+  }
+}
+
+.p-sns-wrapper__img--spotify img {
+  @include mq(md) {
+    max-width: rem(133);
+  }
+}
+
+.p-sns-wrapper__img--twitter img {
+  max-width: rem(48);
+}
+
+.p-sns-wrapper__img--facebook img {
+  max-width: rem(40);
+}

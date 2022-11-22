@@ -1,0 +1,23 @@
+@use "global" as *;
+
+.c-btn-square {
+  display: inline-block;
+  border-radius: rem(8);
+  min-width: rem(137);
+  text-align: center;
+  font-size: rem(16);
+  font-weight: bold;
+  background: $gold;
+  color: $black;
+  line-height: calc(23 / 16);
+  text-align: center;
+  padding: rem(8) rem(16) rem(9);
+  transition: .3s;
+  border: 1px solid $gold;
+}
+
+.c-btn-square:hover {
+  background: $black;
+  color: $gold;
+  opacity: 1;
+}
