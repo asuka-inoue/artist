@@ -62,6 +62,7 @@ jQuery(function ($) {
     $(this).toggleClass('is-active');
     if($(this).hasClass('is-active')){
       $('.js-drawer').fadeIn();
+      $("body").toggleClass("noscroll"); 
     }else{
       $('.js-drawer').fadeOut();
     }
