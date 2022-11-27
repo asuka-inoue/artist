@@ -1,0 +1,12 @@
+@use "global" as *;
+
+.p-mv {
+  height: 100vh;
+  width: 100%;
+}
+
+.p-mv img {
+  width: 100%;
+  height: inherit;
+  object-fit: cover;
+}

@@ -1,0 +1,14 @@
+@use "global" as *;
+
+.p-header__nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+
+.p-header__hamburger {
+  position: relative;
+  z-index: 10;
+}

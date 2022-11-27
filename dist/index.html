@@ -34,9 +34,68 @@
 </head>
 
 <body>
+  <header class="p-header l-header">
+    <button class="p-header__hamburger c-hamburger js-hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="p-header__nav p-nav js-drawer">
+      <div class="p-nav__wrapper">
+        <ul class="p-nav__list">
+          <li class="p-nav__item">
+            <a href="#profile" data-en="profile">profile</a>
+          </li>
+          <li class="p-nav__item">
+            <a href="#news" data-en="news">news</a>
+          </li>
+          <li class="p-nav__item">
+            <a href="#live" data-en="liveshow">liveshow</a>
+          </li>
+          <li class="p-nav__item">
+            <a href="#discography" data-en="discography">discography</a>
+          </li>
+          <li class="p-nav__item">
+            <a href="#movie" data-en="movie">movie</a>
+          </li>
+        </ul>
+      </div>
+      
+    </nav>
+  </header>
 
   <main>
-    <section class="p-profile l-profile">
+    <div class="p-mv">
+      <img src="./images/mv-img.jpg" alt="ライブの様子">
+    </div>
+    <div class="p-sns-wrapper l-top-sns l-inner">
+        <div class="p-sns-wrapper__img p-sns-wrapper__img--youtube">
+          <img src="./images/logo-youtube.svg" alt="YouTube" />
+        </div>
+        <div class="p-sns-wrapper__img p-sns-wrapper__img--stores">
+          <img src="./images/logo-stores.svg" alt="stores" />
+        </div>
+        <div class="p-sns-wrapper__img p-sns-wrapper__img--tiktok">
+          <img src="./images/logo-tiktok.svg" alt="tiktok" />
+        </div>
+        <div class="p-sns-wrapper__img p-sns-wrapper__img--17live">
+          <img src="./images/logo-17live.svg" alt="17live" />
+        </div>
+        <div class="p-sns-wrapper__img p-sns-wrapper__img--vimeo">
+          <img src="./images/logo-vimeo.svg" alt="vimeo" />
+        </div>
+        <div class="p-sns-wrapper__img p-sns-wrapper__img--spotify">
+          <img src="./images/logo-spotify.svg" alt="spotify" />
+        </div>
+        <div class="p-sns-wrapper__img p-sns-wrapper__img--facebook">
+          <img src="./images/logo-facebook.svg" alt="facebook" />
+        </div>
+        <div class="p-sns-wrapper__img p-sns-wrapper__img--twitter">
+          <img src="./images/logo-twitter.svg" alt="twitter" />
+        </div>
+    </div>
+
+    <section class="p-profile l-profile" id="profile">
       <div class="l-inner-sm">
         <h2 class="c-section-title" data-en="profile">profile</h2>
         <div class="p-profile__wrapper">
@@ -54,7 +113,7 @@
       </div>
     </section>
 
-    <section class="p-news l-news">
+    <section class="p-news l-news" id="news">
       <div class="l-inner-sm">
         <h2 class="c-section-title" data-en="news">news</h2>
         <div class="p-news__list">
@@ -81,7 +140,7 @@
       </div>
     </section>
 
-    <section class="p-live l-live">
+    <section class="p-live l-live" id="live">
       <div class="l-inner-sm">
         <h2 class="c-section-title" data-en="liveshow">liveshow</h2>
         <div class="p-live__list">
@@ -134,13 +193,13 @@
       </div>
     </section>
 
-    <section class="p-discography l-discography">
+    <section class="p-discography l-discography" id="discography">
       <div class="l-inner-sm">
         <h2 class="c-section-title" data-en="discography">discography</h2>
       </div>
       <div class="l-inner p-discography__inner">
         <div class="p-discography__slider">
-          <div class="swiper">
+          <div class="swiper js-disco-swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide p-slide">
                 <div class="p-slide__img">
@@ -247,10 +306,63 @@
         </div>
       </div>
     </section>
+
+    <section class="p-movie l-movie" id="movie">
+      <div class="l-inner-sm">
+        <h2 class="c-section-title" data-en="movie">movie</h2>
+        <div class="p-movie__frame">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/zM7WrU3oijM" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+        <div class="p-movie__body">
+          <div class="p-movie__info">
+            1st Single<br><span>2021.10.22 ON SALE</span>
+          </div>
+          <h3 class="p-movie__title">「XXXX XXXXX」</h3>
+        </div>
+      </div>
+    </section>
+
+    <div class="u-desktop l-footer-sns">
+      <div class="p-sns-wrapper l-inner">
+        <div class="p-sns-wrapper__img p-sns-wrapper__img--youtube">
+          <img src="./images/logo-youtube.svg" alt="YouTube" />
+        </div>
+        <div class="p-sns-wrapper__img p-sns-wrapper__img--stores">
+          <img src="./images/logo-stores.svg" alt="stores" />
+        </div>
+        <div class="p-sns-wrapper__img p-sns-wrapper__img--tiktok">
+          <img src="./images/logo-tiktok.svg" alt="tiktok" />
+        </div>
+        <div class="p-sns-wrapper__img p-sns-wrapper__img--17live">
+          <img src="./images/logo-17live.svg" alt="17live" />
+        </div>
+        <div class="p-sns-wrapper__img p-sns-wrapper__img--vimeo">
+          <img src="./images/logo-vimeo.svg" alt="vimeo" />
+        </div>
+        <div class="p-sns-wrapper__img p-sns-wrapper__img--spotify">
+          <img src="./images/logo-spotify.svg" alt="spotify" />
+        </div>
+        <div class="p-sns-wrapper__img p-sns-wrapper__img--facebook">
+          <img src="./images/logo-facebook.svg" alt="facebook" />
+        </div>
+        <div class="p-sns-wrapper__img p-sns-wrapper__img--twitter">
+          <img src="./images/logo-twitter.svg" alt="twitter" />
+        </div>
+      </div>
+    </div>
   </main>
 
+  <footer class="l-footer p-footer">
+    <div class="p-footer__copy">
+      <small>&copy; 2020 cocomate Inc.</small>
+    </div>
+  </footer>
 
-  <div class="l-inner">
+
+  <!-- <div class="l-inner">
     <h2 class="c-section-title" data-en="profile">profile</h2>
 
     <a href="" class="c-btn"> もっと読む </a>
@@ -287,7 +399,7 @@
     <div class="c-date">
       <time class="c-date__time" datetime="2021-12-04">2021.12.4</time><span>SAT</span>
     </div>
-  </div>
+  </div> -->
 </body>
 
 </html>

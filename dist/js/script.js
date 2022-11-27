@@ -36,12 +36,12 @@ jQuery(function ($) {
   });
 
   // スライダー
-  let mySwiper = new Swiper ('.swiper', {
+  let mySwiper = new Swiper ('.js-disco-swiper', {
     loop: true,
-    // autoplay: {
-    //   delay: 2000,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
     // デフォルトの設定
     slidesPerView: 1.4,
     // spaceBetween: 10,
@@ -56,5 +56,20 @@ jQuery(function ($) {
     },
 
   });
+
+  // ハンバーガーメニュー
+  $('.js-hamburger').click(function() {
+    $(this).toggleClass('is-active');
+    if($(this).hasClass('is-active')){
+      $('.js-drawer').fadeIn();
+    }else{
+      $('.js-drawer').fadeOut();
+    }
+  });
+
+  $(".js-drawer a").click(function () {
+    $('.js-hamburger').trigger('click');
+  });
+
 
 });

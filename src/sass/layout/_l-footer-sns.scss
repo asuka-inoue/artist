@@ -1,0 +1,7 @@
+@use "global" as *;
+
+.l-footer-sns {
+  @include mq(md) {
+    margin-top: rem(164);
+  }
+}
